@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+</head>
+<body>
+<h1>This article has {{words_count}} words !</h1>
+<a href= "{% url 'home' %}">Click Here To Check Home</a>
+<br></br>
+<h1>{{article}}</h1>
+<br></br>
+<h1>Total Words and Numbers!</h1>
+<!--<h1>{{words_dict}}</h1>-->
+{% for word,num in words_dict %}
+<h1>{{word}}:{{num}}</h1>
+{% endfor %}
+</body>
+</html>
